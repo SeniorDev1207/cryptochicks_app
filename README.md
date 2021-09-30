@@ -278,12 +278,7 @@ authenticate({ provider: "walletconnect", chainId: 56 })
 
 To adjust the signing message, you can provide `signingMessage` as an option:
 ```js
-authenticate({ signing: "Moralis Authentication" })
-```
-
-For some wallets you might want to specify the default chainId, to do so you can provide a `chainId` option:
-```js
-authenticate({ provider: "walletconnect", chainId: 56 })
+authenticate({ signingMessage: "Moralis Authentication" })
 ```
 
 ### `signup()` (non-crypto)
@@ -461,7 +456,7 @@ return <pre>{JSON.stringify(data, null, 2)}</pre>;
 
 ### Filter queries
 
-You can filer the query via a second argument. You can mutate the query in any way that Moralis.Quey can.
+You can filer the query via a second argument. You can mutate the query in any way that Moralis.Query can.
 
 *Example:*
 
