@@ -1,6 +1,6 @@
 {
   "name": "react-moralis",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Hooks and components to use Moralis in a React app",
   "keywords": [
     "moralis",
@@ -64,7 +64,7 @@
     "typescript": "^4.2.4"
   },
   "peerDependencies": {
-    "moralis": ">=0.0.80",
+    "moralis": ">=0.0.36",
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
   },
