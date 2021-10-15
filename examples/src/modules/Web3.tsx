@@ -4,8 +4,12 @@ import { CodeBlock } from "../components/CodeBlock";
 import { useMoralis } from "react-moralis";
 
 export const Web3 = () => {
-  const { enableWeb3, isWeb3Enabled, isWeb3EnableLoading, web3EnableError } =
-    useMoralis();
+  const {
+    enableWeb3,
+    isWeb3Enabled,
+    isWeb3EnableLoading,
+    web3EnableError,
+  } = useMoralis();
 
   return (
     <div>

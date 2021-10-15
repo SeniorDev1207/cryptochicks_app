@@ -9,7 +9,7 @@ import {
 import { SetUserData } from "src/hooks/useMoralis/utils/setUserData";
 import { Web3EnableOptions } from "src/hooks/useMoralis/_useMoralisWeb3";
 
-export interface AuthError extends Error {
+interface AuthError extends Error {
   code: number;
 }
 

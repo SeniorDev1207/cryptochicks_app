@@ -53,10 +53,9 @@ function App() {
                 key={path}
                 as={Link}
                 to={path}
-                // @ts-ignore
+                colorScheme="green"
                 fontSize="1.1em"
                 p={2}
-                colorScheme="green"
                 variant={location.pathname === path ? "solid" : "subtle"}
               >
                 {label}

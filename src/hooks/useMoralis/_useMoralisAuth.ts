@@ -2,7 +2,6 @@ import { useState, useCallback, useEffect } from "react";
 import { Moralis } from "moralis";
 import { setMultipleDataToUser, SetUserData } from "./utils/setUserData";
 import { Web3Provider } from "./_useMoralisWeb3";
-import { AuthError } from "src";
 
 export enum AuthenticationState {
   UNDEFINED = "undefined",
@@ -115,8 +114,9 @@ export const _useMoralisAuth = (options: UseMoralisAuthOptions) => {
   };
   const setUser = options.setUser!;
   const [auth, setAuth] = useState<Authentication>(initialAuth);
-  const [hasOnAccountChangeListener, setHasOnAccountChangeListener] =
-    useState(false);
+  const [hasOnAccountChangeListener, setHasOnAccountChangeListener] = useState(
+    false,
+  );
 
   /**
    * Authenticates the user by calling the Moralis.Web3.authenticate function
@@ -388,7 +388,7 @@ export const _useMoralisAuth = (options: UseMoralisAuthOptions) => {
     signup,
     login,
     logout,
-    authError: auth.error as AuthError,
+    authError: auth.error,
     isAuthenticated,
     isUnauthenticated,
     isAuthenticating,
